@@ -10,5 +10,3 @@ class Task(models.Model):
     project = models.ForeignKey(Project, on_delete=models.CASCADE) #Aquí designo que project va a relacionarse con la clase Project, tmb agregue que cuando se elimine Project, 
                                                                     #se elimine en cascadsa los elementos que dependan o tengan relacion con este.
     
-    
-    
