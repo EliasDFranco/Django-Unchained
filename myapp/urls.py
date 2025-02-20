@@ -4,9 +4,9 @@ from . import views
 # Creamos un nuevo archivo "urls.py" pero en la app "myapp", cada app tendrá que almacenar sus propias urls
 urlpatterns = [
     path('', views.index),
-    path('HelloWorld/<str:username>', views.HelloWorld),
+    path('HelloWorld/', views.HelloWorld),
     path('projects/', views.projects),
-    path('tasks/<int:id>', views.tasks),
+    path('tasks/', views.tasks),
     
 ]   
 #La función include de Django en Python permite incluir contenido de una plantilla dentro de otra.
