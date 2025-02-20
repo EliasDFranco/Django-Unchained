@@ -1,12 +1,14 @@
 from django.urls import path
-from . import views, include
+from . import views 
 
 # Creamos un nuevo archivo "urls.py" pero en la app "myapp", cada app tendrá que almacenar sus propias urls
 urlpatterns = [
     path('', views.index),
-    path('', include('myapp.urls')),
-    path('HelloWorld/<str:username>', views.HelloWorld)
-]
+    path('HelloWorld/<str:username>', views.HelloWorld),
+    path('projects/', views.projects),
+    path('tasks/<int:id>', views.tasks),
+    
+]   
 #La función include de Django en Python permite incluir contenido de una plantilla dentro de otra.
 # Esto es útil cuando se tiene el mismo contenido para varias páginas.
 
