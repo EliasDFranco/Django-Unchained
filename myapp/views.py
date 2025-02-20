@@ -8,12 +8,17 @@ def HelloWorld(request):
     return render(request, 'helloworld.html')
     # print(username)
     
-
-def index(request):
-    return render(request, 'index.html')
+def index(request): 
+    title = 'Welcome to South Park!!'
+    return render(request, 'index.html', {
+        'titulo': title
+    })
 
 def projects(request):
-    return render(request, 'projects.html')
+    username = 'EliasDFranco'
+    return render(request, 'projects.html', {
+        'username': username
+    })
     # projects = list(Project.objects.values())
     #return JsonResponse({'projects': projects}, safe=False)
     
