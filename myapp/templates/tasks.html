@@ -1,7 +1,9 @@
 <h1> Tasks </h1>
 {% for task in tasks %}
 <div>
-    {# Esto es un comentario en Jinja2 #}
+    {# Esto es un comentario en Jinja2 | Este comentario no se ve en Developer Tools#}
+    <!--Este comentario si se ve en el html cuando ejecutamos Developer Tools-->
+
     <h1>{{task.title}} </h1>
     {% if task.done == False %}
     <p> Tarea pendiente</p>
