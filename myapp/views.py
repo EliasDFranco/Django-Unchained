@@ -24,7 +24,10 @@ def projects(request):
     
 
 def tasks(request):
-    return render(request, 'tasks.html')
+    tasks = Task.objects.all()
+    return render(request, 'tasks.html', {
+        'tasks': tasks
+    })
     # try: 
     #   task = Task.objects.get(id=id)
     #   return HttpResponse(f'Task: {task.title}')
