@@ -1,6 +1,7 @@
 <h1> Tasks </h1>
 {% for task in tasks %}
 <div>
+    {# Esto es un comentario en Jinja2 #}
     <h1>{{task.title}} </h1>
     {% if task.done == False %}
     <p> Tarea pendiente</p>
