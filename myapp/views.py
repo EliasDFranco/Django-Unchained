@@ -1,7 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.http import HttpResponse, JsonResponse
 from .models import Project, Task
 from django.shortcuts import get_object_or_404
+from .forms import createNewTask
 
 # Create your views here.
 def HelloWorld(request):
@@ -33,4 +34,16 @@ def tasks(request):
     #   return HttpResponse(f'Task: {task.title}')
     #except Task.DoesNotExist:
     #    return HttpResponse('Task not found', status=404)
-
+    
+def create_task(request):
+    if request.method == "GET":
+        return render(request, 'create_task.html', {
+            'form': createNewTask()
+        })
+    else:
+        Task.objects.create(
+            title=request.POST['title'],
+            description=request.POST['description'],
+            project_id=2
+        )
+        return redirect('tasks/')
