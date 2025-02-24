@@ -1,5 +1,5 @@
 {% extends "layouts/base.html" %}
-{% block content %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,15 +9,21 @@
     <title>Project</title>
 </head>
 <body>
+{% block content %}
     <h1> Hi my name is Zeke Jaeger</h1>
-    <h2> WebSite created by {{username}}  <h2>
 
-{% for project in Projects %}
+{% for project in projects %}
 
-<h1> {{projects.name}} </h1>
+    <article class="card">
+        <a href="{% url 'project_detail' project.id %}">
+            <h1> {{project.name}} </h1>
+        </a>
+    </article>
 
 {% endfor %}
 
+{% endblock%}
+
 </body>
 </html>
-{% endblock%}
+

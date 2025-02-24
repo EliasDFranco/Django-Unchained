@@ -1,6 +1,7 @@
 body {
-    background: black;
-    color: whitesmoke;
+    background:cyan;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .navbar {
@@ -13,6 +14,36 @@ body {
     justify-content: space-between;
 }
 
+.navbar ul li {
+    list-style: none;
+}
+
+
 .navbar ul li a {
     color: whitesmoke;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: aqua;
+}
+
+.container {
+    max-width: 1300px;
+    margin: auto;
+    padding: 20px 10px;
+}
+
+.card {
+    background: whitesmoke;
+    padding: 20px;
+    margin-bottom: 2px;
+    color: black;
+}
+
+.input {
+    background: wheat;
+    padding: 10px;
+    text-align: center;
+    display: block;
 }
