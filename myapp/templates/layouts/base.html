@@ -11,12 +11,12 @@
     <nav>
         <ul>   
             <h2>Lista de enlaces para acceder; <h2>
-            <li><a href="/">Home</a></li>
-            <li><a href="/projects">Projects</a></li>
-            <li><a href="/tasks">Tasks</a></li>  
-            <li><a href="/HelloWorld">Hello World</a></li>
-            <li><a href="/create_task">Create New Task</a></li> 
-            <li><a href="/create_project">Create New Project </a></li>
+            <li><a href="{% url 'index' %}"> Home </a></li>
+            <li><a href="{% url 'projects' %}"> Projects </a></li>
+            <li><a href="{% url 'tasks' %}"> Tasks </a></li>  
+            <li><a href="{% url 'HelloWorld' %}"> Hello World </a></li>
+            <li><a href="{% url 'create_tasks' %}"> Create New Task </a></li> 
+            <li><a href="{% url 'create_project' %}"> Create New Project </a></li>
         </ul>  
     </nav>
 
