@@ -41,6 +41,5 @@ Django-Unchained/
 │   ├── tests.py          # ✅ Test cases
 │   └── views.py          # 👀 Request handlers
 ├── db.sqlite3            # 🗃️ SQLite database
-├── folderimage.jpg       # 🖼️ Example image file
 ├── manage.py             # 🏗️ Django management script
 └── README.md             # 📖 Project documentation
