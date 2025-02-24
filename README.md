@@ -4,10 +4,10 @@ This is an introductory Django project that explores the basic concepts of the f
 
 ## 🛠️ Technologies Used  
 
-- 🐍 **Python**  
-- 🎯 **Django 4**  
-- 🗄️ **SQLite** (default **database**)  
-- 🔄 **Git and GitHub** (for version control)  
+-  **Python**  
+-  **Django 4**  
+-  **SQLite** (default **database**)  
+-  **Git and GitHub** (for version control)  
 
 ## 📂 Project Structure  
 
@@ -33,6 +33,7 @@ Django-Unchained/
 │   ├── static/           # 🎨 Static files (CSS, images)
 │   │   ├── css/          # 💅 CSS stylesheets
 │   │   │   ├── main.css  # 🎨 Main CSS file
+|   |   ├── folderimage.jpg       # 🖼️ Example image file
 │   ├── __init__.py
 │   ├── admin.py          # 🛠️ Admin site configurations
 │   ├── apps.py           # 🏢 Application configuration
