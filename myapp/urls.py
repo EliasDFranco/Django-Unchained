@@ -7,8 +7,8 @@ urlpatterns = [
     path('HelloWorld/', views.HelloWorld),
     path('projects/', views.projects),
     path('tasks/', views.tasks),
-    path('create_task', views.create_task)
-    
+    path('create_task/', views.create_task),
+    path('create_project/', views.create_project),
 ]   
 #La función include de Django en Python permite incluir contenido de una plantilla dentro de otra.
 # Esto es útil cuando se tiene el mismo contenido para varias páginas.

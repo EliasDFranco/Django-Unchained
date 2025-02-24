@@ -1,4 +1,4 @@
-{% extends "base.html" %}
+{% extends "layouts/base.html" %}
 {% block content %}
 <!DOCTYPE html>
 <html lang="en">
@@ -12,9 +12,9 @@
     <h1> Hi my name is Zeke Jaeger</h1>
     <h2> WebSite created by {{username}}  <h2>
 
-{% for project in Projecs %}
+{% for project in Projects %}
 
-<h1> {{projecs.name}} </h1>
+<h1> {{projects.name}} </h1>
 
 {% endfor %}
 
