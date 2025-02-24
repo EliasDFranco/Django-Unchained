@@ -2,3 +2,17 @@ body {
     background: black;
     color: whitesmoke;
 }
+
+.navbar {
+    background: #404040;
+    padding: 10px 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar ul li a {
+    color: whitesmoke;
+}
